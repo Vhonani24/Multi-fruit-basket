@@ -121,7 +121,7 @@ describe('The fruit_basket function', function () {
 
         ], await testFruitBasket.returnFruitBasketBasedOnId(3));
     });
-    it('should return the total cost of a specific basket based on basket name and on the basket id', async function () {
+    /*it('should return the total cost of a specific basket based on basket name and on the basket id', async function () {
 
         const testFruitBasket = TheFruitBasket(pool);
 
@@ -143,7 +143,7 @@ describe('The fruit_basket function', function () {
 
 
         assert.deepEqual([{ sum: 24.00 }], await testFruitBasket.totatCostForSpecificBasket('Tropical', 3));
-    });
+    });*/
 
 
 
