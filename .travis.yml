@@ -4,6 +4,7 @@ node_js:
 env:
   - DATABASE_URL=postgresql://postgres@localhost:5432/multi_fruit_basket_tests
 before_script:
+  - npm install
   - psql -c 'create database multi_fruit_basket_tests;' -U postgres
   - psql -U postgres -d multi_fruit_basket_tests -a -f tables.sql
 services:
